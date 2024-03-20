@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bare Bones Layout</title>
+    <meta name=""description" content="A brief description">
+    <meta name=""author" content=""your Site Name">
+
+<!-- Open Graph Protocol-->
+<!--
+    <meta property="og:title" content="A brief description">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mysite">
+    <meta property="og:description' content="A brief description">
+    <meta property="og:image" content="image.png">
+-->
+
+<!--
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+-->
+
+<!-- Include your CSS files here-->
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+    body {background-color: #8E8CD8;}
+    h1 {font-family: Impact; font-size: 300%; text-align: center; color: #FFB900; -webkit-text-stroke-color: aliceblue; -webkit-text-stroke-width: 1px;}
+    form {background-color: #FFB900; padding: 2em; max-width: fit-content; margin: auto;}
+    div {padding: 2%; font-family: Gill Sans; color: white}
+    button {background-color: white; border-color:#8E8CD8; border-width: 5px; display: inline-block; padding: 5px 12px; border-radius: 12px;}
+</style>
+</head>
+
+<body>
+  <header>
+    <!-- Add your website name or logo here -->
+    <audio hidden controls loop autoplay>
+        <source src="piano-sound.wav" type="audio/wav">
+    </audio>
+  </header>  
+  <nav>
+    <!-- Add your website navigation here -->
+  </nav>
+  <main>
+    <!-- Add your main content here -->
+    <h1>Make a Reservation!</h1>
+    <form>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required minlength="2">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" required minlength="6">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="booking_date">Booking Date:</label>
+            <input type="date" id="booking_date" name="booking_date" required>
+        </div>
+        <div>
+            <label for="number_of_people">Number of People:</label>
+            <input type="number" id="number_of_people" name="number_of_people" required min="1" max="8">
+        </div>
+        <div>
+            <input type="checkbox" id="cancellation" name="cancellation" required>
+            <label for="cancellation">I agree to the cancellation policy</label>
+        </div>
+        <div>
+            <label for="dish_rating">Dish Rating:</label>
+            <input type="range" id="dish_rating" name="dish_rating" list="numbers" min="1" max="5">
+            <datalist id="numbers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </datalist>
+        </div>
+        <div>
+            <button type="submit">Submit Form</button>
+        </div>
+    </form>
+  </main>
+  <footer>
+    <!-- Add copyright notices and other footer content here -->
+  </footer>
+
+  <!-- Include your JavaScript files here -->
+  <script src=""js/script.js></script>
+</body>
+</html>
