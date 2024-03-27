@@ -20,21 +20,26 @@
     /* Step 2: Change text color for all li elements */
     color: #FDFF60;
     /* Step 3: Background color for each li element */
-    background-color: #222220;
+    background-color: #4B4B4B;
     /* Step 4: Padding and margin for each li element */
-    
+    padding: 10px;
+    margin: 10px;
     /* Step 5: Border for each li element */
-  
+    border: solid 1px #000000;
     /* Step 6: Rounded corners for each li element */
-  
+    border-radius: 13px;
     /* Step 7: Set list-style-type property to None for each li element  */
+    list-style-type: none;
   }
   
   /* Step 8 & 9: Interactive rule for even li elements - background color change on hover with transition */
+  li:nth-child(odd):hover {
+    background-color: black;
   
   /* Apply a transition for background color change - combined with Step 8 */
-  
+    transition: color 0.3s ease 1s;
+  }
   /* Step 10 & 11: Interactive rule for odd li elements - font size and weight change on hover */
   
   /* Ensure smooth transition for font size and weight - combined with Step 10 */
-    
+  
