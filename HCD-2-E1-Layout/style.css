@@ -31,3 +31,14 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 3 1fr;
+    grid-template-rows: 100%;
+    gap: 10px;
+}
+
+.main-content {
+    
+}
