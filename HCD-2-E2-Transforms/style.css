@@ -48,6 +48,6 @@
     font-weight: bold;
   }
   /* Ensure smooth transition for font size and weight - combined with Step 10 */
-  li:nth-child(odd) {
+ li:nth-child(odd) {
     transition: all ease 0.3s
   }
