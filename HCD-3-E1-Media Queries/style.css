@@ -73,21 +73,37 @@
   /* Learners will add the rest of their CSS below this line */
   
  /* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
+ .container {
+  display: grid;
+  grid-template-columns: 100%;
+
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 768px) {
-  .column {
-    width: 50%;
+@media (max-width: 992px) {
+  .container {
+  /* Add rules here */
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "nav"
+                        "header"
+                        "text text text"
+                        "image image"
+                        "footer";
   }
 }
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 480px) {
-  .column {
-    width: 100%;
+@media (max-width: 600px) {
+  .container {
+  /* Add rules here */
+  grid-template-columns: 100%;
+  grid-template-areas: "nav"
+                        "header"
+                        "text"
+                        "text"
+                        "text"
+                        "image"
+                        "image"
+                        "footer";
   }
 }
