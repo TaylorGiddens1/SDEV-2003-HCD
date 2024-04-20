@@ -82,4 +82,10 @@
     .container {
       grid-template-rows: repeat(8, 1fr);
     }
+    .texts{
+      grid-template-columns: 1fr;
+    }
+    .images{
+      grid-template-columns: 1fr;
+    }
   }
