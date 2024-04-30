@@ -1,3 +1,32 @@
+
 body {
-    background-color: red;
+    background-color:#F1E0D2 ;
+}
+
+
+
+
+
+
+header {
+ 
+   background-color:#E09D8C;
+}
+
+ul {
+  background-color: #E09D8C;
+  text-align: left;
+  padding: 0.5em;
+}
+
+li {
+    display: inline;
+    margin: 3em;
+    padding: 0;
+    font-family: Arial;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
 }
